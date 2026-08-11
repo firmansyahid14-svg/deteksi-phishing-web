@@ -1,0 +1,112 @@
+/* ================================
+   Google Font
+================================ */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap');
+
+/* ================================
+   Reset CSS
+================================ */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#0d1117;
+    color:#ffffff;
+    min-height:100vh;
+    overflow-x:hidden;
+    -webkit-font-smoothing:antialiased;
+    -moz-osx-font-smoothing:grayscale;
+}
+
+#root{
+    width:100%;
+    min-height:100vh;
+}
+
+/* ================================
+   Link
+================================ */
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+/* ================================
+   Input
+================================ */
+
+input,
+button{
+    font-family:'Inter',sans-serif;
+}
+
+button{
+    cursor:pointer;
+}
+
+/* ================================
+   Scrollbar
+================================ */
+
+::-webkit-scrollbar{
+    width:8px;
+}
+
+::-webkit-scrollbar-track{
+    background:#10151d;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#27d980;
+    border-radius:20px;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    background:#34e08e;
+}
+
+/* ================================
+   Selection
+================================ */
+
+::selection{
+    background:#27d980;
+    color:#fff;
+}
+
+/* ================================
+   Autofill
+================================ */
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus{
+    -webkit-box-shadow:0 0 0px 1000px #111827 inset;
+    -webkit-text-fill-color:#fff;
+    transition:background-color 5000s ease-in-out 0s;
+}
+
+/* ================================
+   Responsive
+================================ */
+
+img{
+    max-width:100%;
+    display:block;
+}
+
+button:disabled{
+    opacity:.7;
+    cursor:not-allowed;
+}
